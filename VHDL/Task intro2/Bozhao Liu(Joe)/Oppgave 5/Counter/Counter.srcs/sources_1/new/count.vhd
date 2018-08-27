@@ -59,7 +59,7 @@ begin
     dout <= buff_signal;
 end process;
 
-edge_signal <= '1' when buff = '1' and buff3 = '0' and peri else 
-                '1' when buff = '1' and buff2 = '0' and not peri else
+edge_signal <= '1' when buff2 = '1' and buff4 = '0' and peri else 
+                '1' when buff2 = '1' and buff3 = '0' and not peri else
                 '0';
 end Behavioral;
