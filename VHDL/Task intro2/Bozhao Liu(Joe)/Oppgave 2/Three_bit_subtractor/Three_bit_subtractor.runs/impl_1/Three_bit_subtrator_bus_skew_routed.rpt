@@ -1,0 +1,15 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.1 (lin64) Build 2288692 Thu Jul 26 18:23:50 MDT 2018
+| Date         : Wed Aug 22 08:47:49 2018
+| Host         : bozhao-Lenovo-V480 running 64-bit Ubuntu 18.04.1 LTS
+| Command      : report_bus_skew -warn_on_violation -file Three_bit_subtrator_bus_skew_routed.rpt -pb Three_bit_subtrator_bus_skew_routed.pb -rpx Three_bit_subtrator_bus_skew_routed.rpx
+| Design       : Three_bit_subtrator
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

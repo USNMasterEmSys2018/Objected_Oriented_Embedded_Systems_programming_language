@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Wed Aug 22 08:45:24 2018
+# Process ID: 11754
+# Current directory: /media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 2/Three_bit_subtractor/Three_bit_subtractor.runs/synth_1
+# Command line: vivado -log Three_bit_subtrator.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Three_bit_subtrator.tcl
+# Log file: /media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 2/Three_bit_subtractor/Three_bit_subtractor.runs/synth_1/Three_bit_subtrator.vds
+# Journal file: /media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 2/Three_bit_subtractor/Three_bit_subtractor.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Three_bit_subtrator.tcl -notrace

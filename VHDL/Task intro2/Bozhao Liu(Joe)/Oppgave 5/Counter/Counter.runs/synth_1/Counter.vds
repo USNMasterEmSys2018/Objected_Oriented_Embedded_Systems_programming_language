@@ -1,0 +1,307 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Thu Aug 23 12:58:53 2018
+# Process ID: 3813
+# Current directory: /media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.runs/synth_1
+# Command line: vivado -log Counter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Counter.tcl
+# Log file: /media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.runs/synth_1/Counter.vds
+# Journal file: /media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Counter.tcl -notrace
+Command: synth_design -top Counter -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3818 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1269.262 ; gain = 75.906 ; free physical = 4580 ; free virtual = 8100
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Counter' [/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/sources_1/new/Counter.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'GetSignal' [/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/sources_1/new/count.vhd:44]
+WARNING: [Synth 8-614] signal 'buff_signal' is read in the process but is not in the sensitivity list [/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/sources_1/new/count.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'GetSignal' (1#1) [/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/sources_1/new/count.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'Get_boolean_signal' [/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/sources_1/new/Get_boolean_signal.vhd:43]
+WARNING: [Synth 8-614] signal 'buff2' is read in the process but is not in the sensitivity list [/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/sources_1/new/Get_boolean_signal.vhd:47]
+WARNING: [Synth 8-614] signal 'buff' is read in the process but is not in the sensitivity list [/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/sources_1/new/Get_boolean_signal.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Get_boolean_signal' (2#1) [/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/sources_1/new/Get_boolean_signal.vhd:43]
+WARNING: [Synth 8-614] signal 'stat' is read in the process but is not in the sensitivity list [/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/sources_1/new/Counter.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'Counter' (3#1) [/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/sources_1/new/Counter.vhd:47]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1314.887 ; gain = 121.531 ; free physical = 4590 ; free virtual = 8113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1314.887 ; gain = 121.531 ; free physical = 4589 ; free virtual = 8112
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1314.887 ; gain = 121.531 ; free physical = 4589 ; free virtual = 8112
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/constrs_1/new/counter.xdc]
+Finished Parsing XDC File [/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/constrs_1/new/counter.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/constrs_1/new/counter.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Counter_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Counter_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1660.488 ; gain = 0.000 ; free physical = 4291 ; free virtual = 7861
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4369 ; free virtual = 7940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4369 ; free virtual = 7940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4370 ; free virtual = 7941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/sources_1/new/Counter.vhd:56]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4359 ; free virtual = 7932
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module GetSignal 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Get_boolean_signal 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (get_store_rise_edge/buff3_reg) is unused and will be removed from module Counter.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:37 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4345 ; free virtual = 7922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:48 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4207 ; free virtual = 7792
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:48 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4206 ; free virtual = 7791
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:48 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4206 ; free virtual = 7791
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:49 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4206 ; free virtual = 7791
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:49 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4206 ; free virtual = 7791
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:49 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4206 ; free virtual = 7791
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:49 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4206 ; free virtual = 7791
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:49 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4206 ; free virtual = 7791
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:49 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4206 ; free virtual = 7791
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |     2|
+|3     |LUT3 |     8|
+|4     |LUT4 |     1|
+|5     |LUT5 |     4|
+|6     |LUT6 |     1|
+|7     |FDRE |    23|
+|8     |FDSE |     1|
+|9     |IBUF |     9|
+|10    |OBUF |     4|
++------+-----+------+
+
+Report Instance Areas: 
++------+------------------------+-------------------+------+
+|      |Instance                |Module             |Cells |
++------+------------------------+-------------------+------+
+|1     |top                     |                   |    54|
+|2     |  get_boolean_rise_edge |Get_boolean_signal |     4|
+|3     |  get_count_rise_edge   |GetSignal          |    17|
+|4     |  get_store_rise_edge   |GetSignal_0        |    11|
++------+------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:49 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4206 ; free virtual = 7791
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1660.488 ; gain = 121.531 ; free physical = 4265 ; free virtual = 7850
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:49 . Memory (MB): peak = 1660.488 ; gain = 467.133 ; free physical = 4275 ; free virtual = 7860
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:50 . Memory (MB): peak = 1668.496 ; gain = 475.234 ; free physical = 4257 ; free virtual = 7843
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.runs/synth_1/Counter.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Counter_utilization_synth.rpt -pb Counter_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1692.508 ; gain = 0.000 ; free physical = 4257 ; free virtual = 7842
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 23 12:59:51 2018...

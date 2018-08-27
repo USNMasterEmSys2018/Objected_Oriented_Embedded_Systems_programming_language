@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/sources_1/new/count.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity GetSignal
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/sources_1/new/Counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Counter
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test

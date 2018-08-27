@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:23:50 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Thu Aug 23 10:38:14 2018
+# Process ID: 432
+# Current directory: /media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.sim/sim_1/behav/xsim/xsim.dir/Counter_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /media/bozhao/Storage/Study USN/VHDL/Oppgave/Oppgave intro2/Oppgave 5/Counter/Counter.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /media/bozhao/Storage/Study -notrace

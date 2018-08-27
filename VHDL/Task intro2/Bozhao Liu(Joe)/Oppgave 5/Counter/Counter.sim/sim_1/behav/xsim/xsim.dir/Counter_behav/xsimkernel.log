@@ -1,0 +1,4 @@
+Running: xsim.dir/Counter_behav/xsimk -simmode gui -wdb Counter_behav.wdb -simrunnum 0 -socket 39469
+Design successfully loaded
+Design Loading Memory Usage: 43164 KB (Peak: 43216 KB)
+Design Loading CPU Usage: 30 ms

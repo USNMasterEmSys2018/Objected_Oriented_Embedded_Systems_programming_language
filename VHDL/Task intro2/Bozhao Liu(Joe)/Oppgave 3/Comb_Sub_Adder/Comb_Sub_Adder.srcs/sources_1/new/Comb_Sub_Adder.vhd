@@ -1,0 +1,53 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 08/22/2018 09:15:36 AM
+-- Design Name: 
+-- Module Name: Comb_Sub_Adder - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity Comb_Sub_Adder is
+    Port ( sw : in STD_LOGIC_VECTOR (2 downto 0);
+           btn : in STD_LOGIC_VECTOR (2 downto 0);
+           switch : in STD_LOGIC;
+           led : out STD_LOGIC_VECTOR (3 downto 0));
+end Comb_Sub_Adder;
+
+architecture Behavioral of Comb_Sub_Adder is
+    signal c,d: std_logic_vector (3 downto 0) := "0000";
+begin
+    proc1: entity work.Three_bit_subtractor2(Behavioral)
+         port map(sw => sw, btn => btn, led => c);
+    
+    proc2: entity work.Three_bit_adder(Behavioral)
+         port map(sw => sw, btn => btn, led => d);
+	
+	led <= c when switch = '0' else  d;
+
+
+end Behavioral;
