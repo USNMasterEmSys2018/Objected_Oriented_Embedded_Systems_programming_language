@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Bounce.srcs/sources_1/new/bounce.vhd" \
+"../../../../Bounce.srcs/sim_1/new/tast.vhd" \
+
+# Do not sort compile order
+nosort
