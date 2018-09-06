@@ -33,7 +33,7 @@ use ieee.numeric_std.all;
 --use UNISIM.VComponents.all;
 
 entity bounce is
-    generic( periods: integer := 4);
+    generic( periods: integer := 13);
     Port (
            clk : in STD_LOGIC;
            btn : in STD_LOGIC_VECTOR (0 downto 0);
