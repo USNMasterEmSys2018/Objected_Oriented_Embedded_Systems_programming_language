@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Bozhao_Liu/Assignment/Oppgave 1/Bounce/Bounce.runs/synth_1'
+HD_PWD='D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/Oppgave 1/Bounce/Bounce.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+EAStep vivado -log State_press.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source State_press.tcl

@@ -33,49 +33,90 @@ use ieee.numeric_std.all;
 --use UNISIM.VComponents.all;
 
 entity debounce_trigger is
-    generic( periods: integer := 24);
+    generic( periods: integer := 23);
     Port (
            clk : in STD_LOGIC;
            btn : in STD_LOGIC;
-           led : out STD_LOGIC);
+           reset : in std_logic;
+           led : out STD_LOGIC := '0');
 end debounce_trigger;
 
 architecture Behavioral of debounce_trigger is
-    signal counter: STD_LOGIC_VECTOR (periods downto 0) := (others => '0');
-    signal en: std_logic := '0'; 
-    signal buff, buff2: STD_LOGIC_VECTOR (1 downto 0) := "00";
-    signal d: std_logic := '0';
+    type state is (
+                    idle_state,
+                    debounce_state,
+                    blink_state
+                    );
+    signal current_state, next_state: state := idle_state;                
+    signal Debounce_counter, Debounce_counter_next: STD_LOGIC_VECTOR (periods downto 0) := (others => '0');
+    signal Go_Debounce_counter : boolean := false;
+    --signal Blink_counter, Blink_counter_next: STD_LOGIC_VECTOR (0 downto 0) := (others => '0');
+    signal Go_Blink_counter : std_logic;
+    signal en: std_logic := '0';
+    signal FF: STD_LOGIC_VECTOR (1 downto 0) := "00";
+    signal d, buff_out, buff: std_logic;
 begin
-    D_ff: process(clk)
+    sync_logic:process(clk, btn, en)
     begin
         if rising_edge(clk) then
-            buff(1) <= buff(0);
-            buff(0) <= btn;
-        end if;
-    end process;
-    
-    d <= buff(1) xor buff(0);
-    
-    counter_proc: process (clk)
-    begin
-        if rising_edge(clk) then
-            if d = '1' then
-                counter <= (others => '0');
-            elsif en = '0' then
-                counter <= std_logic_vector(unsigned(counter) + 1);
+            if reset ='0' then
+                current_state <= idle_state;
+                Debounce_counter <= (others => '0');
+                led <= '0';
+                buff <= '0';
+            else
+                current_state <= next_state;
+                FF(1) <= FF(0);
+                FF(0) <= btn;
+                if Go_Debounce_counter then
+                    if en = '0' then
+                        Debounce_counter <= Debounce_counter_next;
+                    end if;
+                end if;
+                --buffer output
+                led <= buff_out;
             end if;
-            en <= counter(periods);
         end if;
     end process;
-    
-    output_buffer: process(clk)
+    --check change of button change
+    d <= not(FF(1)) and FF(0);	
+    en <= Debounce_counter(periods);
+    Debounce_counter_next <= std_logic_vector(unsigned(Debounce_counter) + 1);
+    output_logic:process(current_state, go_Blink_counter)
     begin
-        if rising_edge(clk) then
-            buff2(1) <= buff2(0);
-            buff2(0) <= buff(1);
-        end if;
+        buff_out <= '0';
+        case current_state is
+            when idle_state => 
+                buff_out <= '0';
+            when debounce_state => 
+                buff_out <= '0';
+            when blink_state => 
+                buff_out <= go_Blink_counter;
+        end case;
     end process;
     
-    led <= not(buff2(1)) and buff2(0);
+    next_state_logic:process(current_state, en, d)
+    begin
+        next_state <= current_state;
+        Go_Debounce_counter <= false;
+        Go_Blink_counter <= '0';
+        case current_state is
+            when idle_state => 
+                if d = '1' then
+                    next_state <= debounce_state;
+                end if;
+            when debounce_state => 
+                Go_Debounce_counter <= true;
+                if en = '1' then
+                    next_state <= blink_state;
+                    go_Blink_counter <= '1';
+                end if;
+            when blink_state => 
+                go_Blink_counter <= '1';
+                if go_Blink_counter = '1' then
+                    next_state <= idle_state;
+                end if;    
+        end case;
+    end process;
+    								 
 end Behavioral;
-

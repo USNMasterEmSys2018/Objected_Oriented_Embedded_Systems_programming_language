@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1536182662">
-  <File Type="PA-TCL" Name="flash.tcl"/>
-  <File Type="REPORTS-TCL" Name="flash_reports.tcl"/>
-  <File Type="RDS-RDS" Name="flash.vds"/>
-  <File Type="RDS-UTIL" Name="flash_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="flash_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="flash.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1536614892">
+  <File Type="PA-TCL" Name="debounce_trigger.tcl"/>
+  <File Type="REPORTS-TCL" Name="debounce_trigger_reports.tcl"/>
+  <File Type="RDS-RDS" Name="debounce_trigger.vds"/>
+  <File Type="RDS-UTIL" Name="debounce_trigger_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="debounce_trigger_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="debounce_trigger.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Flash.vhd">
@@ -16,7 +16,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="flash"/>
+      <Option Name="TopModule" Val="debounce_trigger"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>

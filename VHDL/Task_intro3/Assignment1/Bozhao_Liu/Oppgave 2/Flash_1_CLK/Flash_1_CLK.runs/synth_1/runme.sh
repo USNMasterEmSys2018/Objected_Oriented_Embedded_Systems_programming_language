@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Bozhao_Liu/Assignment/Oppgave 2/Flash_1_CLK/Flash_1_CLK.runs/synth_1'
+HD_PWD='D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/Oppgave 2/Flash_1_CLK/Flash_1_CLK.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log flash.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source flash.tcl
+EAStep vivado -log debounce_trigger.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source debounce_trigger.tcl

@@ -37,20 +37,20 @@ end tast;
 
 architecture Behavioral of tast is
     signal clk : std_logic := '0';
-    signal btn : STD_LOGIC_VECTOR (0 downto 0) := "0";
-    signal led : STD_LOGIC_VECTOR (0 downto 0) := "0";
+    signal btn : STD_LOGIC;
+    signal led : STD_LOGIC;
     
     constant clk_period : time := 10 ns;
 begin
-    uut: entity work.bounce(Behavioral)
-            port map( clk=> clk, btn => btn, led => led);
+    uut: entity work.State_press(Behavioral)
+            port map( clk=> clk, btn => btn, reset => '1', led => led);
     
     logic_process: process
     begin
-        btn(0) <= '0';
-        wait for clk_period*500;
-        btn(0) <= '1';
-        wait for clk_period*1000;
+        btn <= '0';
+        wait for clk_period*50;
+        btn <= '1';
+        wait for clk_period*100;
     end process;
     
     clk_process: process

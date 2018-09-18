@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Sep  7 00:54:28 2018
-# Process ID: 6068
+# Start of session at: Mon Sep 10 13:00:53 2018
+# Process ID: 8224
 # Current directory: D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.runs/synth_1
 # Command line: vivado.exe -log State_machine.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source State_machine.tcl
 # Log file: D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.runs/synth_1/State_machine.vds
@@ -15,28 +15,26 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10268 
+INFO: Helper process launched with PID 14156 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 357.090 ; gain = 99.055
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 357.445 ; gain = 99.000
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:135]
-WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:145]
 INFO: [Synth 8-638] synthesizing module 'State_machine' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:42]
-INFO: [Synth 8-3491] module 'State_press' declared at 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/state_press.vhd:35' bound to instance 'reset_state' of component 'State_press' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:81]
+INFO: [Synth 8-3491] module 'State_press' declared at 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/state_press.vhd:35' bound to instance 'debounce_reset_state' of component 'State_press' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:81]
 INFO: [Synth 8-638] synthesizing module 'State_press' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/state_press.vhd:43]
 	Parameter periods bound to: 24 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'State_press' (1#1) [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/state_press.vhd:43]
 WARNING: [Synth 8-614] signal 'lreset' is read in the process but is not in the sensitivity list [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:84]
 WARNING: [Synth 8-614] signal 'next_state' is read in the process but is not in the sensitivity list [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:84]
-INFO: [Synth 8-3491] module 'debounce_trigger' declared at 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/Debounce_trigger.vhd:35' bound to instance 'debounce_switch_state' of component 'debounce_trigger' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:112]
+INFO: [Synth 8-3491] module 'debounce_trigger' declared at 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/Debounce_trigger.vhd:35' bound to instance 'debounce_switch_state' of component 'debounce_trigger' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:115]
 INFO: [Synth 8-638] synthesizing module 'debounce_trigger' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/Debounce_trigger.vhd:43]
 	Parameter periods bound to: 24 - type: integer 
 WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/Debounce_trigger.vhd:63]
 WARNING: [Synth 8-6014] Unused sequential element en_reg was removed.  [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/Debounce_trigger.vhd:64]
 INFO: [Synth 8-256] done synthesizing module 'debounce_trigger' (2#1) [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/Debounce_trigger.vhd:43]
-INFO: [Synth 8-3491] module 'State_press' declared at 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/state_press.vhd:35' bound to instance 'press_state' of component 'State_press' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:115]
-INFO: [Synth 8-3491] module 'debounce_trigger' declared at 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/Debounce_trigger.vhd:35' bound to instance 'trigger_state' of component 'debounce_trigger' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:118]
-INFO: [Synth 8-3491] module 'warning' declared at 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/warning.vhd:35' bound to instance 'warning_state' of component 'warning' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:121]
+INFO: [Synth 8-3491] module 'State_press' declared at 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/state_press.vhd:35' bound to instance 'press_state' of component 'State_press' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:118]
+INFO: [Synth 8-3491] module 'debounce_trigger' declared at 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/Debounce_trigger.vhd:35' bound to instance 'trigger_state' of component 'debounce_trigger' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:121]
+INFO: [Synth 8-3491] module 'warning' declared at 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/warning.vhd:35' bound to instance 'warning_state' of component 'warning' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:124]
 INFO: [Synth 8-638] synthesizing module 'warning' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/warning.vhd:44]
 	Parameter periods bound to: 24 - type: integer 
 	Parameter freq bound to: 125000000 - type: integer 
@@ -44,12 +42,13 @@ INFO: [Synth 8-256] done synthesizing module 'warning' (3#1) [D:/USN_Study/Objec
 INFO: [Synth 8-638] synthesizing module 'next_state_logic' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/next_state_logic.vhd:42]
 WARNING: [Synth 8-614] signal 'current_state' is read in the process but is not in the sensitivity list [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/next_state_logic.vhd:57]
 WARNING: [Synth 8-614] signal 'state_indecater_current' is read in the process but is not in the sensitivity list [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/next_state_logic.vhd:57]
+WARNING: [Synth 8-614] signal 'lCurrent_state' is read in the process but is not in the sensitivity list [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/next_state_logic.vhd:57]
 WARNING: [Synth 8-614] signal 'lnext_state' is read in the process but is not in the sensitivity list [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/next_state_logic.vhd:57]
 WARNING: [Synth 8-614] signal 'state_indecater_next' is read in the process but is not in the sensitivity list [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/next_state_logic.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'next_state_logic' (4#1) [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/next_state_logic.vhd:42]
 INFO: [Synth 8-256] done synthesizing module 'State_machine' (5#1) [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/State_machine.vhd:42]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 409.930 ; gain = 151.895
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 412.578 ; gain = 154.133
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -62,10 +61,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 409.930 ; gain = 151.895
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 412.578 ; gain = 154.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 409.930 ; gain = 151.895
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 412.578 ; gain = 154.133
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -81,26 +80,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 750.273 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 752.375 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 750.273 ; gain = 492.238
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 752.375 ; gain = 493.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 750.273 ; gain = 492.238
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 752.375 ; gain = 493.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 750.273 ; gain = 492.238
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 752.375 ; gain = 493.930
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "counter1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 750.273 ; gain = 492.238
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 752.375 ; gain = 493.930
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -128,9 +127,10 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
 	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -148,6 +148,7 @@ Detailed RTL Component Info :
 	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
 Module State_press 
 Detailed RTL Component Info : 
 +---XORs : 
@@ -179,6 +180,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	                2 Bit    Registers := 1     
 +---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -203,10 +205,8 @@ INFO: [Synth 8-3886] merging instance 'press_state/ff_reg[0]' (FD) to 'trigger_s
 INFO: [Synth 8-3886] merging instance 'press_state/ff_reg[1]' (FD) to 'trigger_state/ff_reg[1]'
 INFO: [Synth 8-3886] merging instance 'trigger_state/ff2_reg[0]' (FD) to 'warning_state/ff2_reg[0]'
 INFO: [Synth 8-3886] merging instance 'trigger_state/ff2_reg[1]' (FD) to 'warning_state/ff2_reg[1]'
-WARNING: [Synth 8-3332] Sequential element (press_state/en_reg) is unused and will be removed from module State_machine.
-WARNING: [Synth 8-3332] Sequential element (press_state/led_reg) is unused and will be removed from module State_machine.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 750.273 ; gain = 492.238
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 752.375 ; gain = 493.930
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -218,13 +218,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 750.273 ; gain = 492.238
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 752.375 ; gain = 493.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 766.414 ; gain = 508.379
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 767.551 ; gain = 509.105
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -237,7 +237,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4765] Removing register instance (\warning_state/en_reg ) from module (State_machine) as it is equivalent to (\warning_state/en_reg__0 ) and driving same net [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.srcs/sources_1/new/warning.vhd:81]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 767.184 ; gain = 509.148
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 768.703 ; gain = 510.258
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -261,7 +261,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 767.184 ; gain = 509.148
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 768.703 ; gain = 510.258
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -274,7 +274,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 767.184 ; gain = 509.148
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 768.703 ; gain = 510.258
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -286,25 +286,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 767.184 ; gain = 509.148
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 768.703 ; gain = 510.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 767.184 ; gain = 509.148
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 768.703 ; gain = 510.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 767.184 ; gain = 509.148
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 768.703 ; gain = 510.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 767.184 ; gain = 509.148
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 768.703 ; gain = 510.258
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -321,15 +321,15 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    22|
-|3     |LUT1   |     5|
-|4     |LUT2   |    35|
-|5     |LUT3   |     2|
-|6     |LUT4   |    10|
-|7     |LUT5   |     4|
-|8     |LUT6   |     7|
+|2     |CARRY4 |    29|
+|3     |LUT1   |     7|
+|4     |LUT2   |    34|
+|5     |LUT3   |     4|
+|6     |LUT4   |    12|
+|7     |LUT5   |     5|
+|8     |LUT6   |     8|
 |9     |FDCE   |     4|
-|10    |FDRE   |    91|
+|10    |FDRE   |   118|
 |11    |FDSE   |    13|
 |12    |IBUF   |     4|
 |13    |OBUF   |     4|
@@ -339,21 +339,22 @@ Report Instance Areas:
 +------+------------------------+-------------------+------+
 |      |Instance                |Module             |Cells |
 +------+------------------------+-------------------+------+
-|1     |top                     |                   |   202|
-|2     |  debounce_switch_state |debounce_trigger   |     4|
-|3     |  reset_state           |State_press        |    41|
-|4     |  switch_state          |next_state_logic   |     8|
-|5     |  trigger_state         |debounce_trigger_0 |     3|
-|6     |  warning_state         |warning            |   132|
+|1     |top                     |                   |   243|
+|2     |  debounce_reset_state  |State_press        |    41|
+|3     |  debounce_switch_state |debounce_trigger   |     7|
+|4     |  press_state           |State_press_0      |    37|
+|5     |  switch_state          |next_state_logic   |     5|
+|6     |  trigger_state         |debounce_trigger_1 |     3|
+|7     |  warning_state         |warning            |   137|
 +------+------------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 767.184 ; gain = 509.148
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 768.703 ; gain = 510.258
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 767.184 ; gain = 168.805
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 767.184 ; gain = 509.148
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 768.703 ; gain = 170.461
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 768.703 ; gain = 510.258
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -361,11 +362,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-36 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+36 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 767.184 ; gain = 521.781
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 771.625 ; gain = 525.871
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine_test/State_machine.runs/synth_1/State_machine.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file State_machine_utilization_synth.rpt -pb State_machine_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 767.184 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Sep  7 00:55:11 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 771.625 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 10 13:01:36 2018...

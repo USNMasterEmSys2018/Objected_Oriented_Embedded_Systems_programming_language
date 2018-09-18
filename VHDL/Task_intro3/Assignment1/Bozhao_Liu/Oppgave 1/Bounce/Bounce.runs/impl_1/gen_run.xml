@@ -1,51 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1536097009">
-  <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
-  <File Type="BITSTR-BMM" Name="design_1_wrapper_bd.bmm"/>
-  <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
-  <File Type="OPT-DCP" Name="design_1_wrapper_opt.dcp"/>
-  <File Type="OPT-HWDEF" Name="design_1_wrapper.hwdef"/>
-  <File Type="PWROPT-DCP" Name="design_1_wrapper_pwropt.dcp"/>
-  <File Type="BG-BGN" Name="design_1_wrapper.bgn"/>
-  <File Type="PLACE-DCP" Name="design_1_wrapper_placed.dcp"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="design_1_wrapper_incremental_reuse_pre_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="design_1_wrapper_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="design_1_wrapper.bin"/>
-  <File Type="PHYSOPT-DCP" Name="design_1_wrapper_physopt.dcp"/>
-  <File Type="BITSTR-MSK" Name="design_1_wrapper.msk"/>
-  <File Type="ROUTE-ERROR-DCP" Name="design_1_wrapper_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="design_1_wrapper_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="design_1_wrapper_routed_bb.dcp"/>
-  <File Type="BITSTR-LTX" Name="design_1_wrapper.ltx"/>
-  <File Type="BITSTR-MMI" Name="design_1_wrapper.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="design_1_wrapper.sysdef"/>
-  <File Type="ROUTE-TIMING-PB" Name="design_1_wrapper_timing_summary_routed.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="design_1_wrapper_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="design_1_wrapper_postroute_physopt_bb.dcp"/>
-  <File Type="BG-BIT" Name="design_1_wrapper.bit"/>
-  <File Type="BITSTR-RBT" Name="design_1_wrapper.rbt"/>
-  <File Type="BITSTR-NKY" Name="design_1_wrapper.nky"/>
-  <File Type="BG-DRC" Name="design_1_wrapper.drc"/>
-  <File Type="RDI-RDI" Name="design_1_wrapper.vdi"/>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1536600680">
+  <File Type="ROUTE-PWR" Name="State_press_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="State_press.tcl"/>
+  <File Type="BITSTR-BMM" Name="State_press_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="State_press_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="State_press_reports.tcl"/>
+  <File Type="OPT-DCP" Name="State_press_opt.dcp"/>
+  <File Type="OPT-DRC" Name="State_press_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="State_press.hwdef"/>
+  <File Type="PWROPT-DCP" Name="State_press_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="State_press_placed.dcp"/>
+  <File Type="PLACE-IO" Name="State_press_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="State_press_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="State_press_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="State_press_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="State_press_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="State_press.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="State_press_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="State_press.bin"/>
+  <File Type="PHYSOPT-DCP" Name="State_press_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="State_press.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="State_press_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="State_press_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="State_press_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="State_press_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="State_press_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="State_press_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="State_press.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="State_press_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="State_press.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="State_press_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="State_press_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="State_press.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="State_press_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="State_press_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="State_press_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="State_press_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="State_press_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="State_press_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="State_press_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="State_press_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="State_press_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="State_press_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="State_press_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="State_press_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="State_press.bit"/>
+  <File Type="BITSTR-RBT" Name="State_press.rbt"/>
+  <File Type="BITSTR-NKY" Name="State_press.nky"/>
+  <File Type="BG-DRC" Name="State_press.drc"/>
+  <File Type="RDI-RDI" Name="State_press.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/bounce.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="design_1_wrapper"/>
+      <Option Name="TopModule" Val="State_press"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -75,6 +90,4 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_0_0"/>
 </GenRun>

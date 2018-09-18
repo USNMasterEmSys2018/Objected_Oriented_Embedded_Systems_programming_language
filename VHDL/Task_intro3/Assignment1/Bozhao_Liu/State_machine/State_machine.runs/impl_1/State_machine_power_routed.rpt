@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Thu Sep  6 14:36:30 2018
+| Date             : Mon Sep 10 15:31:20 2018
 | Host             : DESKTOP-IPMNJQE running 64-bit major release  (build 9200)
 | Command          : report_power -file State_machine_power_routed.rpt -pb State_machine_power_summary_routed.pb -rpx State_machine_power_routed.rpx
 | Design           : State_machine
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.095        |
+| Total On-Chip Power (W)  | 0.096        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.002        |
+| Dynamic (W)              | 0.003        |
 | Device Static (W)        | 0.093        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 83.9         |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       57 |       --- |             --- |
-|   CARRY4       |    <0.001 |        7 |      4400 |            0.16 |
-|   Register     |    <0.001 |       35 |     35200 |            0.10 |
-|   LUT as Logic |    <0.001 |        6 |     17600 |            0.03 |
-|   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |    <0.001 |       48 |       --- |             --- |
-| I/O            |     0.001 |        8 |       100 |            8.00 |
+| Clocks         |     0.001 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      199 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       44 |     17600 |            0.25 |
+|   CARRY4       |    <0.001 |       22 |      4400 |            0.50 |
+|   Register     |    <0.001 |      106 |     35200 |            0.30 |
+|   Others       |     0.000 |       10 |       --- |             --- |
+| Signals        |    <0.001 |      174 |       --- |             --- |
+| I/O            |     0.002 |        8 |       100 |            8.00 |
 | Static Power   |     0.093 |          |           |                 |
-| Total          |     0.095 |          |           |                 |
+| Total          |     0.096 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.005 |       0.001 |      0.004 |
+| Vccint    |       1.000 |     0.005 |       0.002 |      0.004 |
 | Vccaux    |       1.800 |     0.005 |       0.000 |      0.005 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -147,10 +147,11 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| State_machine           |     0.002 |
+| State_machine           |     0.003 |
 |   debounce_switch_state |    <0.001 |
 |   press_state           |    <0.001 |
 |   trigger_state         |    <0.001 |
+|   warning_state         |     0.001 |
 +-------------------------+-----------+
 
 

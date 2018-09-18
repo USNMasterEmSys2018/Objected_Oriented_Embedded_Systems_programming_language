@@ -67,7 +67,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache C:/Users/liubo/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3824-DESKTOP-IPMNJQE/incrSyn
+  set_param synth.incrementalSynthesisCache C:/Users/liubo/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14768-DESKTOP-IPMNJQE/incrSyn
   set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7z010clg400-1
   set_property design_mode GateLvl [current_fileset]

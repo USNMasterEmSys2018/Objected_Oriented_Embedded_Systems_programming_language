@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log flash.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source flash.tcl" );
+         "-log debounce_trigger.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source debounce_trigger.tcl" );
 
 
 

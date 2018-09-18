@@ -32,49 +32,83 @@ use ieee.numeric_std.all;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity flash is
-    generic( periods: integer := 7);
+entity debounce_trigger is
     Port (
            clk : in STD_LOGIC;
-           btn : in STD_LOGIC_VECTOR (0 downto 0);
-           led : out STD_LOGIC_VECTOR (0 downto 0) := "0");
-end flash;
+           btn : in STD_LOGIC;
+           reset : in std_logic;
+           led : out STD_LOGIC := '0');
+end debounce_trigger;
 
-architecture Behavioral of flash is
-    signal counter: STD_LOGIC_VECTOR (periods downto 0) := (others => '0');
-    signal en: std_logic := '0'; 
-    signal buff, buff2: STD_LOGIC_VECTOR (1 downto 0) := "00";
-    signal d: std_logic := '0';
+architecture Behavioral of debounce_trigger is
+    type state is (
+                    idle_state,
+                    debounce_Flash_state,
+                    High_state,
+                    debounce_Low_state
+                  );
+    signal current_state, next_state: state := idle_state;
+    signal counter, counter_next: integer := 0;
+    constant periods: integer := 6250000;
+    signal go_counter: boolean := false;
+    signal buff_out, go_flash: std_logic := '0';
+    signal FF:std_logic_vector (1 downto 0) := "00";
 begin
-    D_ff: process(clk)
+    sync_proc:process(clk, reset)
     begin
         if rising_edge(clk) then
-            buff(1) <= buff(0);
-            buff(0) <= btn(0);
-        end if;
-    end process;
-    
-    d <= buff(1) xor buff(0);
-    
-    counter_proc: process (clk)
-    begin
-        if rising_edge(clk) then
-            if d = '1' then
-                counter <= (others => '0');
-            elsif en = '0' then
-                counter <= std_logic_vector(unsigned(counter) + 1);
+            if reset = '0' then
+                current_state <= idle_state;
+                counter <= 0;
+                FF <= "00";
+            else
+                current_state <= next_state;
+                FF(1) <= FF(0);
+                FF(0) <= go_flash;
+                counter <= counter_next;
             end if;
-            en <= counter(periods);
         end if;
     end process;
     
-    output_buffer: process(clk)
+    counter_next <= counter + 1 when go_counter else
+                    0;
+    
+    next_state_logic:process(current_state, btn, counter)
+    begin
+        next_state <= current_state;
+        go_counter <= false;
+        go_flash <= '0';
+        case current_state is
+            when idle_state =>
+                if btn = '1' then
+                    next_state <= debounce_Flash_state;
+                    go_flash <= '1';
+                end if;
+            when debounce_Flash_state =>
+                go_counter <= true;
+                go_flash <= '1';
+                if counter > periods then
+                    next_state <= high_state;
+                end if;
+            when High_state =>
+                if btn = '0' then
+                    next_state <= debounce_Low_state;
+                end if; 
+            when debounce_Low_state =>
+                go_counter <= true;
+                if counter > periods then
+                    next_state <= idle_state;
+                end if;
+        end case;
+    end process;
+    
+    with current_state select
+        buff_out <= not(FF(1)) and FF(0) when debounce_Flash_state,
+               '0' when Others;	
+    process(clk)
     begin
         if rising_edge(clk) then
-            buff2(1) <= buff2(0);
-            buff2(0) <= buff(1);
+            led <= buff_out;
         end if;
     end process;
-    
-    led(0) <= not(buff2(1)) and buff2(0);
 end Behavioral;

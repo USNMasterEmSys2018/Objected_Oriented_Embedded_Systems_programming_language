@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Fri Sep  7 00:55:11 2018
+| Date         : Mon Sep 10 13:01:36 2018
 | Host         : DESKTOP-IPMNJQE running 64-bit major release  (build 9200)
 | Command      : report_utilization -file State_machine_utilization_synth.rpt -pb State_machine_utilization_synth.pb
 | Design       : State_machine
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   45 |     0 |     17600 |  0.26 |
-|   LUT as Logic          |   45 |     0 |     17600 |  0.26 |
+| Slice LUTs*             |   51 |     0 |     17600 |  0.29 |
+|   LUT as Logic          |   51 |     0 |     17600 |  0.29 |
 |   LUT as Memory         |    0 |     0 |      6000 |  0.00 |
-| Slice Registers         |  108 |     0 |     35200 |  0.31 |
-|   Register as Flip Flop |  108 |     0 |     35200 |  0.31 |
+| Slice Registers         |  135 |     0 |     35200 |  0.38 |
+|   Register as Flip Flop |  135 |     0 |     35200 |  0.38 |
 |   Register as Latch     |    0 |     0 |     35200 |  0.00 |
 | F7 Muxes                |    0 |     0 |      8800 |  0.00 |
 | F8 Muxes                |    0 |     0 |      4400 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 4     |          Yes |           - |        Reset |
 | 13    |          Yes |         Set |            - |
-| 91    |          Yes |       Reset |            - |
+| 118   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -146,18 +146,18 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |   91 |        Flop & Latch |
-| LUT2     |   35 |                 LUT |
-| CARRY4   |   22 |          CarryLogic |
+| FDRE     |  118 |        Flop & Latch |
+| LUT2     |   34 |                 LUT |
+| CARRY4   |   29 |          CarryLogic |
 | FDSE     |   13 |        Flop & Latch |
-| LUT4     |   10 |                 LUT |
-| LUT6     |    7 |                 LUT |
-| LUT1     |    5 |                 LUT |
+| LUT4     |   12 |                 LUT |
+| LUT6     |    8 |                 LUT |
+| LUT1     |    7 |                 LUT |
+| LUT5     |    5 |                 LUT |
 | OBUF     |    4 |                  IO |
-| LUT5     |    4 |                 LUT |
+| LUT3     |    4 |                 LUT |
 | IBUF     |    4 |                  IO |
 | FDCE     |    4 |        Flop & Latch |
-| LUT3     |    2 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 

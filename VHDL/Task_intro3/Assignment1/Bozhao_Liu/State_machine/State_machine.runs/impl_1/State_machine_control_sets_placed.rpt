@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Thu Sep  6 14:36:10 2018
+| Date         : Mon Sep 10 15:30:56 2018
 | Host         : DESKTOP-IPMNJQE running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file State_machine_control_sets_placed.rpt
 | Design       : State_machine
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     2 |
-| Unused register locations in slices containing registers |    10 |
+| Number of unique control sets                            |     5 |
+| Unused register locations in slices containing registers |    20 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,7 +34,8 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|    16+ |            2 |
+|      4 |            1 |
+|    16+ |            4 |
 +--------+--------------+
 
 
@@ -44,23 +45,26 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              20 |            4 |
+| No           | No                    | No                     |              44 |           12 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               4 |            1 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              50 |            7 |
+| Yes          | Yes                   | No                     |             164 |           21 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+--------------------------------+------------------+------------------+----------------+
-|  Clock Signal  |          Enable Signal         | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+----------------+--------------------------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG |                                |                  |                4 |             20 |
-|  clk_IBUF_BUFG | press_state/counter[0]_i_2_n_0 | trigger_state/d  |                7 |             50 |
-+----------------+--------------------------------+------------------+------------------+----------------+
++----------------+--------------------------------+---------------------+------------------+----------------+
+|  Clock Signal  |          Enable Signal         |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
++----------------+--------------------------------+---------------------+------------------+----------------+
+|  clk_IBUF_BUFG | debounce_switch_state/E[0]     |                     |                1 |              4 |
+|  clk_IBUF_BUFG |                                |                     |               12 |             44 |
+|  clk_IBUF_BUFG | press_state/counter[0]_i_1_n_0 | trigger_state/reset |                7 |             50 |
+|  clk_IBUF_BUFG | warning_state/sel              | trigger_state/reset |                7 |             50 |
+|  clk_IBUF_BUFG | warning_state/counter10        | trigger_state/reset |                7 |             64 |
++----------------+--------------------------------+---------------------+------------------+----------------+
 
 

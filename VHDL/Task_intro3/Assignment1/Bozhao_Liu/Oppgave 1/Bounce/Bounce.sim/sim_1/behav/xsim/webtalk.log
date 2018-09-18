@@ -2,13 +2,17 @@
 # Webtalk v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu Sep  6 09:46:55 2018
-# Process ID: 5036
+# Start of session at: Tue Sep 11 14:24:22 2018
+# Process ID: 8828
 # Current directory: D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/Oppgave 1/Bounce/Bounce.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/Oppgave 1/Bounce/Bounce.sim/sim_1/behav/xsim/xsim.dir/tast_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/Oppgave 1/Bounce/Bounce.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/Oppgave 1/Bounce/Bounce.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/Oppgave -notrace
-couldn't read file "D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/Oppgave": no such file or directory
-INFO: [Common 17-206] Exiting Webtalk at Thu Sep  6 09:46:55 2018...
+invalid command name "******"
+ambiguous command name "******": after append apply array auto_execok auto_import auto_load auto_load_index auto_qualify binary break case catch cd chan clock close close_msg_db cmd concat config_webtalk continue create_gui_custom_command create_gui_custom_command_arg create_msg_db create_property dict encoding eof error eval exec exit expr fblocked fconfigure fcopy file fileevent flush for foreach format get_gui_custom_command_args get_gui_custom_commands get_msg_config get_param get_property gets glob global help history if incr info interp join lappend lassign lindex linsert lint_files list list_param list_property list_property_value llength load load_msg_db lrange lrepeat lreplace lreverse lsearch lset lsort namespace open package pid proc puts pwd read regexp register_proc regsub remove_gui_custom_command_args remove_gui_custom_commands rename report_environment report_param report_property reset_msg_config reset_msg_count reset_param reset_property return scan seek send_msg_id set set_msg_config set_param set_property socket source split string subst switch tclLog tell time trace unknown unload unregister_proc unset update uplevel upvar variable version vwait webtalk_add_data webtalk_dump_data webtalk_init webtalk_register_client webtalk_terminate webtalk_transmit while
+    while executing
+"****** Webtalk v2018.2 (64-bit)"
+    (file "D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/Oppgave" line 2)
+INFO: [Common 17-206] Exiting Webtalk at Tue Sep 11 14:24:22 2018...

@@ -37,18 +37,18 @@ end test;
 
 architecture Behavioral of test is
     signal clk : STD_LOGIC;
-    signal btn : STD_LOGIC_VECTOR (0 downto 0);
-    signal led : STD_LOGIC_VECTOR (0 downto 0);
+    signal btn : STD_LOGIC;
+    signal led : STD_LOGIC;
     
     constant clk_period : time := 10 ns;
 begin
-    action: entity work.flash(Behavioral)
-                port map(clk => clk, btn => btn, led => led);
+    action: entity work.debounce_trigger(Behavioral)
+                port map(clk => clk, btn => btn, reset => '1', led => led);
     process 
     begin
-        btn <= "0";
-        wait for clk_period*50;
-        btn <= "1";
+        btn <= '0';
+        wait for clk_period*300;
+        btn <= '1';
         wait for clk_period*300;
     end process;
     

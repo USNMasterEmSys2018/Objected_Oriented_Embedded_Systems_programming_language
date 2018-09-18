@@ -37,13 +37,14 @@ end test;
 
 architecture Behavioral of test is
     signal clk : STD_LOGIC := '0';
-    signal btn : STD_LOGIC_VECTOR (0 downto 0) := "0";
-    signal led : STD_LOGIC_VECTOR (0 downto 0) := "0";
+    signal btn : STD_LOGIC := '0';
+    signal led : STD_LOGIC := '0';
     constant clk_period: time := 8 ns;
 begin
    logic_process: entity work.warning(Behavioral)
                     port map(clk => clk,
                             btn => btn,
+                            reset => '1',
                             led => led
                             ); 
    clk_process :process
@@ -56,8 +57,9 @@ begin
    
     process
     begin
-        --btn <= "0";
-        wait for clk_period * 5;
-        btn <= "1";
+        btn <= '0';
+        wait for clk_period * 100;
+        btn <= '1';
+        wait for clk_period * 500;
     end process;
 end Behavioral;
