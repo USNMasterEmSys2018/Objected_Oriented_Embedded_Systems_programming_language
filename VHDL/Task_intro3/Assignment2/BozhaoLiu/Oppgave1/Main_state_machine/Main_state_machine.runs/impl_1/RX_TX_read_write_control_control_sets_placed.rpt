@@ -1,0 +1,74 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Sep 20 18:00:04 2018
+| Host         : DESKTOP-IPMNJQE running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file RX_TX_read_write_control_control_sets_placed.rpt
+| Design       : RX_TX_read_write_control
+| Device       : xc7z010
+-----------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     9 |
+| Unused register locations in slices containing registers |    16 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      8 |            1 |
+|    16+ |            8 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              44 |            8 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             128 |           19 |
+| Yes          | No                    | No                     |              24 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             180 |           24 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------------+----------------------------------------+------------------+----------------+
+|  Clock Signal  |                   Enable Signal                   |            Set/Reset Signal            | Slice Load Count | Bel Load Count |
++----------------+---------------------------------------------------+----------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | data_send_out/FSM_onehot_current_state[3]_i_1_n_0 |                                        |                2 |              8 |
+|  clk_IBUF_BUFG | data_read_in/bit_counter0                         |                                        |                5 |             16 |
+|  clk_IBUF_BUFG | data_send_out/update_address                      | data_send_out/next_address             |                4 |             26 |
+|  clk_IBUF_BUFG | memory_controling/Data_handling/en                | data_send_out/out[0]                   |                4 |             26 |
+|  clk_IBUF_BUFG |                                                   |                                        |                8 |             44 |
+|  clk_IBUF_BUFG |                                                   | data_send_out/baud_counter[31]_i_1_n_0 |               11 |             64 |
+|  clk_IBUF_BUFG |                                                   | data_read_in/Baud_counter[0]_i_1_n_0   |                8 |             64 |
+|  clk_IBUF_BUFG | data_send_out/bit_sent1                           | data_send_out/baud_counter[31]_i_1_n_0 |                8 |             64 |
+|  clk_IBUF_BUFG | data_read_in/bit_counter0                         | data_read_in/bit_counter[0]_i_1_n_0    |                8 |             64 |
++----------------+---------------------------------------------------+----------------------------------------+------------------+----------------+
+
+

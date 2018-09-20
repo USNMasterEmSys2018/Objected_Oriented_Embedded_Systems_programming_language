@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Main_state_machine.srcs/sources_1/new/Send_data_state_machine.vhd" \
+"../../../../Main_state_machine.srcs/sim_1/imports/new/TEST_sending.vhd" \
+
+# Do not sort compile order
+nosort

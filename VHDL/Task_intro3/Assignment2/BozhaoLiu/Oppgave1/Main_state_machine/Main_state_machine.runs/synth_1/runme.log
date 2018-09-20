@@ -1,0 +1,433 @@
+
+*** Running vivado
+    with args -log RX_TX_read_write_control.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RX_TX_read_write_control.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source RX_TX_read_write_control.tcl -notrace
+Command: synth_design -top RX_TX_read_write_control -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5312 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 357.387 ; gain = 99.355
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'RX_TX_read_write_control' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/RX_TX_read_write_control.vhd:21]
+INFO: [Synth 8-3491] module 'Main_state_machine' declared at 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Main_state_machine.vhd:34' bound to instance 'main' of component 'Main_state_machine' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/RX_TX_read_write_control.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'Main_state_machine' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Main_state_machine.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Main_state_machine' (1#1) [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Main_state_machine.vhd:43]
+	Parameter Baud_width bound to: 1085 - type: integer 
+INFO: [Synth 8-3491] module 'Read_data_state_machine' declared at 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Read_data_state_machine.vhd:34' bound to instance 'data_read_in' of component 'Read_data_state_machine' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/RX_TX_read_write_control.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Read_data_state_machine' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Read_data_state_machine.vhd:44]
+	Parameter Baud_width bound to: 1085 - type: integer 
+WARNING: [Synth 8-614] signal 'Buff_data' is read in the process but is not in the sensitivity list [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Read_data_state_machine.vhd:119]
+INFO: [Synth 8-256] done synthesizing module 'Read_data_state_machine' (2#1) [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Read_data_state_machine.vhd:44]
+INFO: [Synth 8-3491] module 'Memory_control' declared at 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Memory_control.vhd:34' bound to instance 'memory_controling' of component 'Memory_control' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/RX_TX_read_write_control.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'Memory_control' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Memory_control.vhd:44]
+INFO: [Synth 8-3491] module 'self_block_RAM_wrapper' declared at 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Self_block_ram_wrapper.vhd:5' bound to instance 'Data_handling' of component 'self_block_RAM_wrapper' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Memory_control.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'self_block_RAM_wrapper' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Self_block_ram_wrapper.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'self_block_RAM_wrapper' (3#1) [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Self_block_ram_wrapper.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Memory_control' (4#1) [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Memory_control.vhd:44]
+	Parameter Baud_width bound to: 1085 - type: integer 
+INFO: [Synth 8-3491] module 'send_data_state_machine' declared at 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Send_data_state_machine.vhd:6' bound to instance 'data_send_out' of component 'send_data_state_machine' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/RX_TX_read_write_control.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'send_data_state_machine' [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Send_data_state_machine.vhd:17]
+	Parameter Baud_width bound to: 1085 - type: integer 
+WARNING: [Synth 8-614] signal 'data_to_send' is read in the process but is not in the sensitivity list [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Send_data_state_machine.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'send_data_state_machine' (5#1) [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/Send_data_state_machine.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'RX_TX_read_write_control' (6#1) [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/sources_1/new/RX_TX_read_write_control.vhd:21]
+WARNING: [Synth 8-3331] design self_block_RAM_wrapper has unconnected port BRAM_PORTB_0_en
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 412.293 ; gain = 154.262
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 412.293 ; gain = 154.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 412.293 ; gain = 154.262
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/constrs_1/imports/VHDL/ZYBO_Master.xdc]
+Finished Parsing XDC File [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/constrs_1/imports/VHDL/ZYBO_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.srcs/constrs_1/imports/VHDL/ZYBO_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RX_TX_read_write_control_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RX_TX_read_write_control_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 751.793 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 751.793 ; gain = 493.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 751.793 ; gain = 493.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 751.793 ; gain = 493.762
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "Next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Read_data_state_machine'
+INFO: [Synth 8-5546] ROM "LF_buff" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "go_bit_counter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "go_Baud_counter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_cmd_buff" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'send_data_state_machine'
+INFO: [Synth 8-5545] ROM "baud_counter_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "update_address" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count_bit" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LF" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              idle_state |                               00 |                               00
+             start_state |                               01 |                               01
+           reading_state |                               10 |                               10
+             pause_state |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'Read_data_state_machine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              idle_state |                             0001 |                               00
+           sending_state |                             0010 |                               10
+                lf_state |                             0100 |                               11
+        fetch_data_state |                             1000 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'send_data_state_machine'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 751.793 ; gain = 493.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     13 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 4     
++---RAMs : 
+	              64K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Main_state_machine 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+Module Read_data_state_machine 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+Module self_block_RAM_wrapper 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              64K Bit         RAMs := 1     
+Module Memory_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 2     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+Module send_data_state_machine 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "data_read_in/LF_buff" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "data_send_out/baud_counter_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 751.793 ; gain = 493.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|self_block_RAM_wrapper: | Ram_reg    | 8 K x 8(NO_CHANGE)     | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance i_0/memory_controling/Data_handling/Ram_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_0/memory_controling/Data_handling/Ram_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 751.793 ; gain = 493.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 773.422 ; gain = 515.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|self_block_RAM_wrapper: | Ram_reg    | 8 K x 8(NO_CHANGE)     | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance memory_controling/Data_handling/Ram_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance memory_controling/Data_handling/Ram_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 775.063 ; gain = 517.031
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 775.063 ; gain = 517.031
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 775.063 ; gain = 517.031
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 775.063 ; gain = 517.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 775.063 ; gain = 517.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 775.063 ; gain = 517.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 775.063 ; gain = 517.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    71|
+|3     |LUT1     |    24|
+|4     |LUT2     |   120|
+|5     |LUT3     |    36|
+|6     |LUT4     |    18|
+|7     |LUT5     |    38|
+|8     |LUT6     |    11|
+|9     |RAMB36E1 |     2|
+|10    |FDRE     |   188|
+|11    |IBUF     |     2|
+|12    |OBUF     |     1|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------+------------------------+------+
+|      |Instance            |Module                  |Cells |
++------+--------------------+------------------------+------+
+|1     |top                 |                        |   512|
+|2     |  data_read_in      |Read_data_state_machine |   200|
+|3     |  data_send_out     |send_data_state_machine |   241|
+|4     |  main              |Main_state_machine      |    18|
+|5     |  memory_controling |Memory_control          |    49|
+|6     |    Data_handling   |self_block_RAM_wrapper  |     5|
++------+--------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 775.063 ; gain = 517.031
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 775.063 ; gain = 177.531
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 775.063 ; gain = 517.031
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 775.063 ; gain = 529.992
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.runs/synth_1/RX_TX_read_write_control.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RX_TX_read_write_control_utilization_synth.rpt -pb RX_TX_read_write_control_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 775.063 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 20 17:59:11 2018...

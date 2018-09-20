@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Main_state_machine.srcs/sources_1/new/Main_state_machine.vhd" \
+"../../../../Main_state_machine.srcs/sources_1/new/Memory_control.vhd" \
+"../../../../Main_state_machine.srcs/sources_1/new/Read_data_state_machine.vhd" \
+"../../../../Main_state_machine.srcs/sources_1/new/Self_block_ram_wrapper.vhd" \
+"../../../../Main_state_machine.srcs/sources_1/new/Send_data_state_machine.vhd" \
+"../../../../Main_state_machine.srcs/sim_1/new/test_main.vhd" \
+
+# Do not sort compile order
+nosort
