@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Thu Sep 20 18:00:27 2018
+| Date             : Thu Sep 20 22:52:37 2018
 | Host             : DESKTOP-IPMNJQE running 64-bit major release  (build 9200)
 | Command          : report_power -file RX_TX_read_write_control_power_routed.rpt -pb RX_TX_read_write_control_power_summary_routed.pb -rpx RX_TX_read_write_control_power_routed.rpx
 | Design           : RX_TX_read_write_control
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.102        |
+| Total On-Chip Power (W)  | 0.105        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.009        |
+| Dynamic (W)              | 0.011        |
 | Device Static (W)        | 0.093        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 83.8         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.001 |      518 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      192 |     17600 |            1.09 |
+| Slice Logic    |     0.001 |      525 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      184 |     17600 |            1.05 |
 |   CARRY4       |    <0.001 |       71 |      4400 |            1.61 |
 |   Register     |    <0.001 |      188 |     35200 |            0.53 |
-|   Others       |     0.000 |       12 |       --- |             --- |
-| Signals        |     0.001 |      334 |       --- |             --- |
-| Block RAM      |     0.004 |        2 |        60 |            3.33 |
-| I/O            |    <0.001 |        3 |       100 |            3.00 |
+|   Others       |     0.000 |       11 |       --- |             --- |
+| Signals        |     0.001 |      344 |       --- |             --- |
+| Block RAM      |     0.005 |        2 |        60 |            3.33 |
+| I/O            |     0.003 |        8 |       100 |            8.00 |
 | Static Power   |     0.093 |          |           |                 |
-| Total          |     0.102 |          |           |                 |
+| Total          |     0.105 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.011 |       0.008 |      0.004 |
+| Vccint    |       1.000 |     0.012 |       0.008 |      0.004 |
 | Vccaux    |       1.800 |     0.005 |       0.000 |      0.005 |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -148,12 +148,12 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| RX_TX_read_write_control |     0.009 |
+| RX_TX_read_write_control |     0.011 |
 |   data_read_in           |     0.001 |
 |   data_send_out          |     0.002 |
 |   main                   |    <0.001 |
 |   memory_controling      |     0.005 |
-|     Data_handling        |     0.004 |
+|     Data_handling        |     0.005 |
 +--------------------------+-----------+
 
 

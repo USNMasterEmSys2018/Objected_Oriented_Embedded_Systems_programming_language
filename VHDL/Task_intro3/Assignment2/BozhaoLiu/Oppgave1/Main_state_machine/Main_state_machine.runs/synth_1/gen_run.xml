@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1537459104">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1537476637">
   <File Type="PA-TCL" Name="RX_TX_read_write_control.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="RX_TX_read_write_control_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="RX_TX_read_write_control_reports.tcl"/>
   <File Type="RDS-RDS" Name="RX_TX_read_write_control.vds"/>
   <File Type="RDS-UTIL" Name="RX_TX_read_write_control_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="RX_TX_read_write_control_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="RX_TX_read_write_control.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="RX_TX_read_write_control_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="RX_TX_read_write_control_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Main_state_machine.vhd">

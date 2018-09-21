@@ -1,69 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1537459104">
-  <File Type="BITSTR-BMM" Name="RX_TX_read_write_control_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="RX_TX_read_write_control_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="RX_TX_read_write_control_timing_summary_init.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1537476637">
   <File Type="ROUTE-PWR" Name="RX_TX_read_write_control_power_routed.rpt"/>
   <File Type="PA-TCL" Name="RX_TX_read_write_control.tcl"/>
-  <File Type="OPT-TIMING" Name="RX_TX_read_write_control_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="RX_TX_read_write_control_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="RX_TX_read_write_control_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="RX_TX_read_write_control_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="RX_TX_read_write_control_reports.tcl"/>
+  <File Type="OPT-DCP" Name="RX_TX_read_write_control_opt.dcp"/>
   <File Type="OPT-DRC" Name="RX_TX_read_write_control_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="RX_TX_read_write_control.hwdef"/>
   <File Type="PWROPT-DCP" Name="RX_TX_read_write_control_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="RX_TX_read_write_control_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="RX_TX_read_write_control_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="RX_TX_read_write_control_placed.dcp"/>
   <File Type="PLACE-IO" Name="RX_TX_read_write_control_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="RX_TX_read_write_control_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="RX_TX_read_write_control_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="RX_TX_read_write_control_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="RX_TX_read_write_control_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="RX_TX_read_write_control_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="RX_TX_read_write_control_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="RX_TX_read_write_control.bgn"/>
-  <File Type="PLACE-TIMING" Name="RX_TX_read_write_control_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="RX_TX_read_write_control_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="RX_TX_read_write_control.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="RX_TX_read_write_control_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="RX_TX_read_write_control_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="RX_TX_read_write_control_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="RX_TX_read_write_control.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="RX_TX_read_write_control_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="RX_TX_read_write_control_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="RX_TX_read_write_control_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="RX_TX_read_write_control_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="RX_TX_read_write_control_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="RX_TX_read_write_control_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="RX_TX_read_write_control.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="RX_TX_read_write_control_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="RX_TX_read_write_control.mmi"/>
+  <File Type="BITSTR-LTX" Name="RX_TX_read_write_control.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="RX_TX_read_write_control_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="RX_TX_read_write_control.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="RX_TX_read_write_control_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="RX_TX_read_write_control.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="RX_TX_read_write_control_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="RX_TX_read_write_control.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="RX_TX_read_write_control_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="RX_TX_read_write_control_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="RX_TX_read_write_control_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="RX_TX_read_write_control_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="RX_TX_read_write_control_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="RX_TX_read_write_control_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="RX_TX_read_write_control_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="RX_TX_read_write_control_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="RX_TX_read_write_control_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="RX_TX_read_write_control_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="RX_TX_read_write_control_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="RX_TX_read_write_control_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="RX_TX_read_write_control_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="RX_TX_read_write_control_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="RX_TX_read_write_control_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="RX_TX_read_write_control_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="RX_TX_read_write_control_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="RX_TX_read_write_control_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="RX_TX_read_write_control.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="RX_TX_read_write_control_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="RX_TX_read_write_control.rbt"/>
   <File Type="BITSTR-NKY" Name="RX_TX_read_write_control.nky"/>
   <File Type="BG-DRC" Name="RX_TX_read_write_control.drc"/>
