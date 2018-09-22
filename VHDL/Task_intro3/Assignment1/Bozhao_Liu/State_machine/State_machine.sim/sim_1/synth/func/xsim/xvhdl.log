@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine/State_machine.sim/sim_1/synth/func/xsim/test_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity State_press
+INFO: [VRFC 10-307] analyzing entity debounce_trigger
+INFO: [VRFC 10-307] analyzing entity debounce_trigger_0
+INFO: [VRFC 10-307] analyzing entity warning
+INFO: [VRFC 10-307] analyzing entity State_machine
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/State_machine/State_machine.srcs/sim_1/new/test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test
