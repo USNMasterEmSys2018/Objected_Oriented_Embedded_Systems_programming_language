@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Thu Sep 20 22:51:23 2018
+| Date         : Sat Sep 22 11:48:15 2018
 | Host         : DESKTOP-IPMNJQE running 64-bit major release  (build 9200)
 | Command      : report_utilization -file RX_TX_read_write_control_utilization_synth.rpt -pb RX_TX_read_write_control_utilization_synth.pb
 | Design       : RX_TX_read_write_control
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  182 |     0 |     17600 |  1.03 |
-|   LUT as Logic          |  182 |     0 |     17600 |  1.03 |
+| Slice LUTs*             |  171 |     0 |     17600 |  0.97 |
+|   LUT as Logic          |  171 |     0 |     17600 |  0.97 |
 |   LUT as Memory         |    0 |     0 |      6000 |  0.00 |
-| Slice Registers         |  188 |     0 |     35200 |  0.53 |
-|   Register as Flip Flop |  188 |     0 |     35200 |  0.53 |
+| Slice Registers         |  189 |     0 |     35200 |  0.54 |
+|   Register as Flip Flop |  189 |     0 |     35200 |  0.54 |
 |   Register as Latch     |    0 |     0 |     35200 |  0.00 |
 | F7 Muxes                |    0 |     0 |      8800 |  0.00 |
 | F8 Muxes                |    0 |     0 |      4400 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 188   |          Yes |       Reset |            - |
+| 189   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -147,15 +147,15 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  188 |        Flop & Latch |
-| LUT2     |  151 |                 LUT |
-| CARRY4   |   71 |          CarryLogic |
+| FDRE     |  189 |        Flop & Latch |
+| LUT2     |  139 |                 LUT |
+| CARRY4   |   74 |          CarryLogic |
 | LUT3     |   40 |                 LUT |
-| LUT1     |   25 |                 LUT |
-| LUT4     |   19 |                 LUT |
-| LUT6     |   13 |                 LUT |
+| LUT1     |   21 |                 LUT |
+| LUT4     |   12 |                 LUT |
+| LUT6     |   10 |                 LUT |
+| LUT5     |    7 |                 LUT |
 | OBUF     |    5 |                  IO |
-| LUT5     |    5 |                 LUT |
 | IBUF     |    3 |                  IO |
 | RAMB36E1 |    2 |        Block Memory |
 | BUFG     |    1 |               Clock |

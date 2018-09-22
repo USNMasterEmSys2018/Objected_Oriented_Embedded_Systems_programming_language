@@ -86,21 +86,21 @@ begin
                         else 
                     (others => '0'); 
     baud_counter_next <= 0 when (not count_bit) else
-                         0 when(baud_counter = baud_width) else
-                         baud_counter + 1;
+                         baud_counter + 1 when(baud_counter < baud_width) else
+                         0;
     bit_sent_next <= bit_sent + 1 when count_bit and (baud_counter = baud_width) else 
                      0 when not count_bit else bit_sent;   
     output_logic:process(current_state, bit_sent, current_address)
     begin
         Address_to_read <= current_address;
         LF <= '0';
-        Data_out <= '0';
+        Data_out <= '1';
         case current_state is
             when idle_state => 
-                Data_out <= '0';
+                Data_out <= '1';
             when sending_state => 
                 if bit_sent < 10 then
-                Data_out <= data_to_send(9 - bit_sent);
+                Data_out <= data_to_send(bit_sent);
                 end if;
             when fetch_data_state => 
                 Address_to_read <= current_address;

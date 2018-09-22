@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log RX_TX_read_write_control.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source RX_TX_read_write_control.tcl -notrace
 
 

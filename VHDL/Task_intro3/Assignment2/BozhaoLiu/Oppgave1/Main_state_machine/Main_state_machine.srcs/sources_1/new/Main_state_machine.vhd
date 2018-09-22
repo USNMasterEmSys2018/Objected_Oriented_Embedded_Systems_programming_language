@@ -66,7 +66,7 @@ begin
         next_state <= current_state;
         case current_state is
             when idle_state =>
-                if FF_data_in = "01" then
+                if FF_data_in = "10" then
                     next_state <= reading_state;
                 end if;
                 

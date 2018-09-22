@@ -73,7 +73,7 @@ begin
         go_bit_counter <= false;
         case current_state is
             when idle_state =>
-                if data_in = '1' and FF_read_control = "01" then
+                if data_in = '0' and FF_read_control = "01" then
                     next_state <= start_state;
                 end if;
             when start_state =>
@@ -105,7 +105,7 @@ begin
             Read_cmd <= Read_cmd_buff;
             
             if  Baud_counter = Baud_width/2 and go_bit_counter then
-                Buff_data <= Buff_data(6 downto 0)&data_in;  
+                Buff_data <= data_in&Buff_data(7 downto 1);  
             end if;
         end if;
     end process;

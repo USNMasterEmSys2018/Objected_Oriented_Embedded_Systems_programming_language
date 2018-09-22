@@ -41,15 +41,12 @@ architecture Behavioral of Test_RXTX_state_machine is
       Port (
             clk: in std_logic;
             rx: in std_logic;
-            tx: out std_logic;
-            sw: in std_logic_vector(0  downto 0);
-            led: out std_logic_vector(3  downto 0)
+            tx: out std_logic
             );
     end component;
     
     signal clk : STD_LOGIC := '0';
     signal data_in, Data_out : STD_LOGIC := '0';
-    signal led:  std_logic_vector(3  downto 0);
     constant baudrate: integer := 115200;
     constant Baud_width: integer := 1000000000/baudrate/8;
     constant Baud_width_time: time := Baud_width*8ns;
@@ -58,11 +55,9 @@ architecture Behavioral of Test_RXTX_state_machine is
 begin
     uut: RX_TX_read_write_control 
             Generic map(Baud_width => Baud_width)
-            port map ( clk => clk,
-                                         rx  => data_in,
-                                         tx  => Data_out,
-                                         sw  => "1",
-                                         led => led );
+            port map (   clk => clk,
+                         rx  => data_in,
+                         tx  => Data_out);
     clock_control:process
     begin
         clk <= '0';
@@ -80,7 +75,7 @@ begin
         wait for Baud_width_time;
         --data 1
         for i in 7 downto 0 loop
-            data_in <= not(datas(i));  
+            data_in <= not(datas(7-i));  
             wait for Baud_width_time;
         end loop;
         --pause bit
@@ -91,7 +86,7 @@ begin
         wait for Baud_width_time;
         --data 1
         for i in 7 downto 0 loop
-            data_in <= not(LineFeed(i));  
+            data_in <= (LineFeed(7-i));  
             wait for Baud_width_time;
         end loop;
         --pause bit
@@ -104,7 +99,7 @@ begin
         wait for Baud_width_time;
         --data 1
         for i in 7 downto 0 loop
-            data_in <= (datas(i));  
+            data_in <= (datas(7-i));  
             wait for Baud_width_time;
         end loop;
         --pause bit
@@ -115,7 +110,7 @@ begin
         wait for Baud_width_time;
         --data 1
         for i in 7 downto 0 loop
-            data_in <= not(LineFeed(i));  
+            data_in <= (LineFeed(7-i));  
             wait for Baud_width_time;
         end loop;
         --pause bit
