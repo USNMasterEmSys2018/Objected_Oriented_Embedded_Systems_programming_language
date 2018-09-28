@@ -50,7 +50,8 @@ architecture Behavioral of Test_RXTX_state_machine is
     constant baudrate: integer := 115200;
     constant Baud_width: integer := 1000000000/baudrate/8;
     constant Baud_width_time: time := Baud_width*8ns;
-    constant datas: std_logic_vector(7 downto 0):="01010101";
+    constant dataa: std_logic_vector(7 downto 0):="01100001";
+    constant datab: std_logic_vector(7 downto 0):="01100010";
     constant LineFeed: std_logic_vector(7 downto 0) :="00001010";
 begin
     uut: RX_TX_read_write_control 
@@ -75,7 +76,18 @@ begin
         wait for Baud_width_time;
         --data 1
         for i in 7 downto 0 loop
-            data_in <= not(datas(7-i));  
+            data_in <= (dataa(7-i));  
+            wait for Baud_width_time;
+        end loop;
+        --pause bit
+        data_in <= '1';  
+        wait for Baud_width_time*3;
+                --start bit
+        data_in <= '0';  
+        wait for Baud_width_time;
+        --data 1
+        for i in 7 downto 0 loop
+            data_in <= (datab(7-i));  
             wait for Baud_width_time;
         end loop;
         --pause bit
@@ -99,7 +111,18 @@ begin
         wait for Baud_width_time;
         --data 1
         for i in 7 downto 0 loop
-            data_in <= (datas(7-i));  
+            data_in <= (dataa(7-i));  
+            wait for Baud_width_time;
+        end loop;
+        --pause bit
+        data_in <= '1';  
+        wait for Baud_width_time*3;
+                --start bit
+        data_in <= '0';  
+        wait for Baud_width_time;
+        --data 1
+        for i in 7 downto 0 loop
+            data_in <= (datab(7-i));  
             wait for Baud_width_time;
         end loop;
         --pause bit
