@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Sep 10 23:28:15 2018
+# Process ID: 12484
+# Current directory: D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/Oppgave 2/Flash_1_CLK/Flash_1_CLK.runs/synth_1
+# Command line: vivado.exe -log debounce_trigger.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source debounce_trigger.tcl
+# Log file: D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/Oppgave 2/Flash_1_CLK/Flash_1_CLK.runs/synth_1/debounce_trigger.vds
+# Journal file: D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment1/Bozhao_Liu/Oppgave 2/Flash_1_CLK/Flash_1_CLK.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source debounce_trigger.tcl -notrace

@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../State_machine.srcs/sources_1/new/Debounce_trigger.vhd" \
+"../../../../State_machine.srcs/sources_1/new/State_machine.vhd" \
+"../../../../State_machine.srcs/sources_1/new/state_press.vhd" \
+"../../../../State_machine.srcs/sources_1/new/warning.vhd" \
+"../../../../State_machine.srcs/sim_1/new/test.vhd" \
+
+# Do not sort compile order
+nosort

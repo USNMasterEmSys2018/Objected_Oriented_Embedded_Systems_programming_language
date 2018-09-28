@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Sep 22 11:48:22 2018
+# Process ID: 7660
+# Current directory: D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.runs/impl_1
+# Command line: vivado.exe -log RX_TX_read_write_control.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source RX_TX_read_write_control.tcl -notrace
+# Log file: D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.runs/impl_1/RX_TX_read_write_control.vdi
+# Journal file: D:/USN_Study/Objected_Oriented_Embedded_Systems_programming_language/VHDL/Task_intro3/Assignment2/BozhaoLiu/Oppgave1/Main_state_machine/Main_state_machine.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source RX_TX_read_write_control.tcl -notrace
